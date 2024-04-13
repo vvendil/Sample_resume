@@ -2,39 +2,42 @@
     /* General styling */
     html {
         font-family: 'Open Sans', sans-serif;
-        background: #f0f0f0; /* New background color */
+        background: linear-gradient(135deg, #667eea, #764ba2); /* New gradient background */
+        color: #fff; /* Text color */
+        padding: 20px; /* Add some padding */
     }
     a {
         text-decoration: none;
-        color: black;
+        color: #fff; /* Link color */
     }
     hr {
-        background: grey;
+        background: rgba(255, 255, 255, 0.2); /* Change hr color */
     }
 
     /* Container layout */
     #container {
         display: flex;
+        justify-content: center; /* Center align content */
+        align-items: flex-start; /* Align items to the top */
     }
     #profile {
         flex: 1;
-        margin: 5% 2% 0 10%;
+        margin-right: 20px; /* Add some space between profile and info cards */
     }
     #info-cards {
         flex: 2;
-        margin-top: 5%;
-        margin-right: 10%;
     }
 
     /* Profile image */
     #image {
         position: relative;
         overflow: hidden;
+        margin-bottom: 20px; /* Add some space below the profile image */
     }
     #profile-photo {
-        width: 80px;
-        height: 80px;
-        border-radius: 10px;
+        width: 100px; /* Increase profile photo size */
+        height: 100px;
+        border-radius: 50%; /* Make the photo round */
     }
     #image > a {
         position: absolute;
@@ -53,17 +56,16 @@
         -webkit-text-fill-color: transparent;
     }
     .stroke-transparent-blue {
-        -webkit-text-stroke: 1px #097bbf;
+        -webkit-text-stroke: 1px #fff; /* Change stroke color */
         -webkit-text-fill-color: transparent;
     }
 
     /* Profile details */
     #name, #designation, #college, #email, #year-graduation, #education, #telephone, #fax {
-        color: #555;
-        font-size: 14px;
+        font-size: 16px; /* Adjust font size */
     }
     #name, #designation {
-        font-size: 18px;
+        font-size: 24px; /* Increase font size for name and designation */
         font-weight: bold;
     }
     #email {
@@ -89,14 +91,14 @@
         box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .1);
         overflow-x: hidden;
         margin-bottom: 30px;
-        padding: 15px 30px 30px 30px;
-        background-color: #fff;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.1); /* Change card background color */
     }
     .card > p {
-        color: #0e141e;
+        color: #fff;
         font-weight: bold;
         font-size: 18px;
-        line-height: 2;
+        line-height: 1.5;
     }
     .card > p > i {
         font-size: 18px;
@@ -105,7 +107,7 @@
         font-weight: 400;
         font-size: 15px;
         margin-left: 25px;
-        color: #097bbf;
+        color: #fff;
         cursor: pointer;
     }
     .card > ul {
@@ -118,7 +120,6 @@
     .tags span {
         font-size: 14px;
         font-weight: normal;
-        color: #0e141e;
     }
     .tags span span {
         color: #738f93;
@@ -143,6 +144,7 @@
         }
     }
 </style>
+
 
     <div id="inner-nav"></div>
     <div id="container">
