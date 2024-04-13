@@ -1,27 +1,27 @@
 <style>
     /* General styling */
     html {
-        font-family: 'Open Sans', sans-serif;
-        background: linear-gradient(135deg, #667eea, #764ba2);
-        color: #fff;
+        font-family: 'Arial', sans-serif;
+        background: #f5f5f5; /* Light gray background */
+        color: #333; /* Dark text color */
         padding: 20px;
     }
     a {
         text-decoration: none;
-        color: #fff;
+        color: #007bff; /* Blue link color */
     }
     hr {
-        background: rgba(255, 255, 255, 0.2);
+        background: #ccc; /* Light gray horizontal rule */
     }
 
     /* Container layout */
     #container {
         display: flex;
-        flex-wrap: wrap; /* Allow items to wrap */
-        justify-content: space-between; /* Spread items evenly */
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     #profile {
-        flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+        flex: 1 1 300px;
         margin-right: 20px;
         margin-bottom: 20px;
     }
@@ -37,9 +37,9 @@
         margin-bottom: 20px;
     }
     #profile-photo {
-        width: 200px; /* Adjust profile photo size */
+        width: 200px;
         height: 200px;
-        border-radius: 10px;
+        border-radius: 10px; /* Slightly rounded corners */
     }
     #image > a {
         position: absolute;
@@ -58,7 +58,7 @@
         -webkit-text-fill-color: transparent;
     }
     .stroke-transparent-blue {
-        -webkit-text-stroke: 1px #fff;
+        -webkit-text-stroke: 1px #007bff; /* Blue stroke color */
         -webkit-text-fill-color: transparent;
     }
 
@@ -71,7 +71,7 @@
         font-weight: bold;
     }
     #email {
-        font-family: 'Cutive Mono', monospace;
+        font-family: 'Arial', sans-serif; /* Change font family */
     }
 
     /* Social links */
@@ -94,10 +94,10 @@
         overflow-x: hidden;
         margin-bottom: 30px;
         padding: 15px;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: #fff; /* White background */
     }
     .card > p {
-        color: #fff;
+        color: #333;
         font-weight: bold;
         font-size: 18px;
         line-height: 1.5;
@@ -109,7 +109,7 @@
         font-weight: 400;
         font-size: 15px;
         margin-left: 25px;
-        color: #fff;
+        color: #007bff;
         cursor: pointer;
     }
     .card > ul {
@@ -138,7 +138,7 @@
             display: block;
         }
         #profile, #info-cards {
-            width: 100%; /* Set width to full on smaller screens */
+            width: 100%;
         }
         .card {
             margin: 0 5%;
@@ -146,6 +146,7 @@
         }
     }
 </style>
+
 
 
 
