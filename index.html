@@ -2,42 +2,44 @@
     /* General styling */
     html {
         font-family: 'Open Sans', sans-serif;
-        background: linear-gradient(135deg, #667eea, #764ba2); /* New gradient background */
-        color: #fff; /* Text color */
-        padding: 20px; /* Add some padding */
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: #fff;
+        padding: 20px;
     }
     a {
         text-decoration: none;
-        color: #fff; /* Link color */
+        color: #fff;
     }
     hr {
-        background: rgba(255, 255, 255, 0.2); /* Change hr color */
+        background: rgba(255, 255, 255, 0.2);
     }
 
     /* Container layout */
     #container {
         display: flex;
-        justify-content: center; /* Center align content */
-        align-items: flex-start; /* Align items to the top */
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: space-between; /* Spread items evenly */
     }
     #profile {
-        flex: 1;
-        margin-right: 20px; /* Add some space between profile and info cards */
+        flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
     #info-cards {
-        flex: 2;
+        flex: 2 1 600px;
+        margin-bottom: 20px;
     }
 
     /* Profile image */
     #image {
         position: relative;
         overflow: hidden;
-        margin-bottom: 20px; /* Add some space below the profile image */
+        margin-bottom: 20px;
     }
     #profile-photo {
-        width: 100px; /* Increase profile photo size */
-        height: 100px;
-        border-radius: 50%; /* Make the photo round */
+        width: 200px; /* Adjust profile photo size */
+        height: 200px;
+        border-radius: 10px;
     }
     #image > a {
         position: absolute;
@@ -56,16 +58,16 @@
         -webkit-text-fill-color: transparent;
     }
     .stroke-transparent-blue {
-        -webkit-text-stroke: 1px #fff; /* Change stroke color */
+        -webkit-text-stroke: 1px #fff;
         -webkit-text-fill-color: transparent;
     }
 
     /* Profile details */
     #name, #designation, #college, #email, #year-graduation, #education, #telephone, #fax {
-        font-size: 16px; /* Adjust font size */
+        font-size: 16px;
     }
     #name, #designation {
-        font-size: 24px; /* Increase font size for name and designation */
+        font-size: 24px;
         font-weight: bold;
     }
     #email {
@@ -92,7 +94,7 @@
         overflow-x: hidden;
         margin-bottom: 30px;
         padding: 15px;
-        background-color: rgba(255, 255, 255, 0.1); /* Change card background color */
+        background-color: rgba(255, 255, 255, 0.1);
     }
     .card > p {
         color: #fff;
@@ -135,8 +137,8 @@
         #container {
             display: block;
         }
-        #profile {
-            width: 90%;
+        #profile, #info-cards {
+            width: 100%; /* Set width to full on smaller screens */
         }
         .card {
             margin: 0 5%;
@@ -144,6 +146,8 @@
         }
     }
 </style>
+
+
 
 
     <div id="inner-nav"></div>
@@ -174,9 +178,9 @@
             <div class="card">
                 <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Work Experience</p>
                 <ul>
-                    <li><p class="tags">King the Land<br><span>Korea| <span>2019</span></span></p>
+                    <li><p class="tags">King the Land<br><span>Korea | <span>2019</span></span></p>
                         <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                    <li><p class="tags">5 Star Hotel<br><span>Seoul| <span>2022</span></span></p>
+                    <li><p class="tags">5 Star Hotel<br><span>Seoul | <span>2022</span></span></p>
                         <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
               
                 
